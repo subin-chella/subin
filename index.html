@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subin Chellapandian - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #388E3C);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        header .contact-info {
+            margin-top: 10px;
+        }
+
+        header .contact-info p {
+            margin: 5px 0;
+        }
+
+        header .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            margin: 0 auto;
+            position: absolute;
+            top: 50px;
+            left: 20%;
+            transform: translateX(-50%);
+			
+        }
+
+        header .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        section {
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            background: #e1f5fe;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        #skills ul li:before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #039BE5;
+        }
+
+        #experience .job {
+            background: #f9f9f9;
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        #experience .job h3 {
+            margin-bottom: 10px;
+            color: #388E3C;
+        }
+
+        #experience .job p {
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #777;
+        }
+
+        #experience .job ul {
+            margin-top: 10px;
+        }
+
+        #experience .job ul li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 3px solid #4CAF50;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        #experience .job ul li:before {
+            content: "➤";
+            margin-right: 10px;
+            color: #4CAF50;
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #experience .job ul li:hover {
+            background: #e8f5e9;
+            transition: background 0.3s ease-in-out;
+        }
+
+        #experience .job h4 {
+            margin-top: 20px;
+            color: #388E3C;
+        }
+
+        #experience .job h4 + ul li {
+            background: #e8f5e9;
+            border-left: 3px solid #388E3C;
+        }
+
+        #experience .job h4 + ul li:before {
+            content: "🏆";
+            color: #388E3C;
+        }
+
+        #education ul li {
+            background: #e3f2fd;
+            border-left: 5px solid #1976D2;
+            margin: 10px 0;
+            padding: 10px;
+            position: relative;
+        }
+
+        #education ul li:before {
+            content: "🎓";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #1976D2;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-pic">
+                <img src="https://avatars.githubusercontent.com/u/22959614?s=96&v=4" alt="Subin Chellapandian">
+            </div>
+            <h1>Subin Chellapandian</h1>
+            <p>Senior Software Developer | 15 Years of Experience</p>
+            <div class="contact-info">
+                <p>+91 9942443620</p>
+                <p><a href="mailto:subin8899@gmail.com">subin8899@gmail.com</a></p>
+                <p>Chennai, India</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Working as a Module Lead & Lead Software developer with 15+ years of experience. Proficient in JAVA Object Oriented Programming, JavaScript (React.js). Worked in a start-up like challenging work environment. Resourceful professional with extensive experience in Information Technology, specializing in development with Java, Spring Boot, JavaScript, React.js, Node, Spring batch, Netflix OSS, Microservices, Hibernate, RESTful Webservices, Oracle 12c, MySQL databases, Agile methodologies like Scrum & Kanban, Bitbucket Repo, DevOps, Postman REST client, Angular, and AWS. Experienced in test tools like Selenium, Junit, Mockito.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Back End: Java, Spring Boot</li>
+                    <li>Front End: JavaScript, HTML, CSS, React.js, Node</li>
+                    <li>Database: MySQL, Oracle, Redis</li>
+                    <li>DevOps Tools/Services: Git, Bitbucket, Jenkins CI, Nimbus, Jira, Confluence, Gitlab</li>
+                    <li>Monitoring Tools: Splunk, Tropometer</li>
+                    <li>Infrastructure: Linux, Maven, Apache Tomcat, AWS, Node</li>
+                    <li>Framework/Architecture: Spring Boot, Microservices, RESTful Webservices</li>
+                    <li>Open Source/Libraries: Netflix OSS, Eureka, Hystrix, Zuul, PDFbox, Nimbus SDK</li>
+                    <li>Others: ActiveMQ, Datawarehouse Reporting, Jmeter, Selenium, Rest APIs, OAuth 2.0, OIDC, Eclipse, IntelliJ</li>
+                </ul>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Lead Software Developer</h3>
+                    <p>BNY Mellon, Chennai | 2022 September - Present</p>
+                    <ul>
+                        <li>Providing technical solutions by understanding client's technical & business requirements. Working with Senior Leaders within the practice with confidence.</li>
+                        <li>Interaction with business analysts to analyze the client requirements. Attending meetings with service owners to ensure action points are completed on time.</li>
+                        <li>Collaborated with System Designers/Analysts, Architects, and Senior Developers to establish the physical application framework.</li>
+                        <li>Created work plans, monitored and tracked the work schedule, ensuring all activities and deliverables meet agreed timescales. Established long-term relationships with internal & external stakeholders.</li>
+                        <li>Expertise from Requirement understanding, Design, Development, Deployment (test & production env), support, maintenance.</li>
+                    </ul>
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Successfully led the development of the Rule application, improving collateral management efficiency by 30%.</li>
+                        <li>Enhanced system performance, resulting in a 25% reduction in processing time.</li>
+                        <li>Facilitated seamless integration with client systems, increasing user adoption by 20%.</li>
+                        <li>Managed a team of 5 developers, delivering projects on time and within budget, leading to a 15% increase in project throughput.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Module Lead</h3>
+                    <p>BNY Mellon, Chennai | 2017 November - 2022 August</p>
+                    <ul>
+                        <li>Played key roles in analysis, design, development, deployment, and support phases.</li>
+                        <li>Monitored daily batch cycle and addressed any technical and functional issues within SLA.</li>
+                        <li>Delivered the code with the highest quality within deadlines and adapted to complex technical environments.</li>
+                        <li>Collaborated with the functional team for business requirements gathering and resolving technical issues.</li>
+                    </ul>
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Developed and designed various reports for users.</li>
+                        <li>Implemented notification mechanisms and helped manage technical risks.</li>
+                        <li>Documented system processes and standard operating procedures.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Software Developer</h3>
+                    <p>Wipro Technologies, Chennai | 2009 July - 2017 October</p>
+                    <ul>
+                        <li>Designed and developed various modules for the banking and finance sectors.</li>
+                        <li>Worked on the complete SDLC for multiple projects including analysis, design, coding, and testing.</li>
+                        <li>Optimized code performance and resolved critical issues during the UAT phase.</li>
+                    </ul>
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Developed a streamlined workflow, reducing the average processing time by 20%.</li>
+                        <li>Received accolades for exceptional performance and meeting tight deadlines.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Engineering, Valliammai Engineering College, 2005-2009</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Subin Chellapandian</p>
+        </div>
+    </footer>
+</body>
+</html>
